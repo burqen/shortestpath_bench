@@ -11,7 +11,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.assembly.version>2.2.1</maven.assembly.version>
-		<neo4j-version>1.9.4</neo4j-version>
+		<neo4j-version>2.3-SNAPSHOT</neo4j-version>
 		<junit-version>4.10</junit-version>
 		<log4j-version>1.2.17</log4j-version>
 		<hdrhistogram.version>2.1.4</hdrhistogram.version>
@@ -21,7 +21,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.hdrhistogram</groupId>
-			<artifactId>hdrhistogram</artifactId>
+			<artifactId>HdrHistogram</artifactId>
 			<version>${hdrhistogram.version}</version>
 		</dependency>
 		<!-- <dependency> -->

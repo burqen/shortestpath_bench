@@ -37,13 +37,13 @@ public class InputFilesCreator
         boolean directed = ( args[0].equals( DIRECTED_TRUE ) );
 
         File relationshipsCsvFile = new File( Config.RELATIONSHIP_ID_FILE );
-        relationshipsCsvFile.delete();
+        if ( relationshipsCsvFile.exists() ) relationshipsCsvFile.delete();
         relationshipsCsvFile.createNewFile();
         CsvFileWriter relationshipsWriter = new CsvFileWriter( relationshipsCsvFile );
         CsvFileReader relationshipsReader = new CsvFileReader( new File( Config.RAW_RELATIONSHIP_FILE ) );
 
         File nodesCsvFile = new File( Config.NODE_ID_FILE );
-        nodesCsvFile.delete();
+        if ( nodesCsvFile.exists() ) nodesCsvFile.delete();
         nodesCsvFile.createNewFile();
         CsvFileWriter nodesWriter = new CsvFileWriter( nodesCsvFile );
 
