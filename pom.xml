@@ -14,7 +14,7 @@
 		<neo4j-version>1.9.4</neo4j-version>
 		<junit-version>4.10</junit-version>
 		<log4j-version>1.2.17</log4j-version>
-		<hdrhistogram.version>1.0-SNAPSHOT</hdrhistogram.version>
+		<hdrhistogram.version>2.1.4</hdrhistogram.version>
 	</properties>
 
 

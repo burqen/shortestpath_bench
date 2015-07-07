@@ -169,18 +169,18 @@ public class ShortestPathBench
     {
         StringBuilder sb = new StringBuilder();
         sb.append( "\t" ).append( name ).append( "\n" );
-        sb.append( "\t\tCOUNT\t\t : " ).append( histogram.getHistogramData().getTotalCount() ).append( "\n" );
-        sb.append( "\t\tMIN\t\t : " ).append( histogram.getHistogramData().getMinValue() ).append( "\n" );
-        sb.append( "\t\tMAX\t\t : " ).append( histogram.getHistogramData().getMaxValue() ).append( "\n" );
-        sb.append( "\t\t50th PERCENTILE\t : " ).append( histogram.getHistogramData().getValueAtPercentile( 50 ) ).append(
+        sb.append( "\t\tCOUNT\t\t : " ).append( histogram.getTotalCount() ).append( "\n" );
+        sb.append( "\t\tMIN\t\t : " ).append( histogram.getMinValue() ).append( "\n" );
+        sb.append( "\t\tMAX\t\t : " ).append( histogram.getMaxValue() ).append( "\n" );
+        sb.append( "\t\t50th PERCENTILE\t : " ).append( histogram.getValueAtPercentile( 50 ) ).append(
                 "\n" );
-        sb.append( "\t\t90th PERCENTILE\t : " ).append( histogram.getHistogramData().getValueAtPercentile( 90 ) ).append(
+        sb.append( "\t\t90th PERCENTILE\t : " ).append( histogram.getValueAtPercentile( 90 ) ).append(
                 "\n" );
-        sb.append( "\t\t95th PERCENTILE\t : " ).append( histogram.getHistogramData().getValueAtPercentile( 95 ) ).append(
+        sb.append( "\t\t95th PERCENTILE\t : " ).append( histogram.getValueAtPercentile( 95 ) ).append(
                 "\n" );
-        sb.append( "\t\t99th PERCENTILE\t : " ).append( histogram.getHistogramData().getValueAtPercentile( 99 ) ).append(
+        sb.append( "\t\t99th PERCENTILE\t : " ).append( histogram.getValueAtPercentile( 99 ) ).append(
                 "\n" );
-        sb.append( "\t\tMEAN\t\t : " ).append( histogram.getHistogramData().getMean() ).append( "\n" );
+        sb.append( "\t\tMEAN\t\t : " ).append( histogram.getMean() ).append( "\n" );
         return sb.toString();
     }
 
