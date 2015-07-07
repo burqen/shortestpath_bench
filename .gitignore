@@ -12,3 +12,5 @@ build.sh~
 README.md~
 db/
 data/generated/
+.DS_Store
+*.iml
